@@ -16,7 +16,12 @@ import os
 import grt
 from grt.modules import DbMySQLFE as fe
 c = grt.root.wb.doc.physicalModels[0].catalog
-fe.generateSQLCreateStatements(c, c.version, {})
+fe.generateSQLCreateStatements(c, c.version, {
+  'KeepSchemata': 1,
+  'SkipForeignKeys': 1,
+  'GenerateUse': 0,
+  'UseShortNames':1,
+})
 fe.createScriptForCatalogObjects(os.getenv('OUTPUT'), c, {})" \
   --quit-when-done
 
