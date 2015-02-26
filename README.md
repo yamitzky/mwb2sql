@@ -6,7 +6,7 @@ What is this?
 
 mwb2sql is a shell command utility to produce sql file from mwb file (file format of MySQL Workbench).
 
-** This fork generates minimum  (my favorite) DDL. ** 
+**This fork generates minimum  (my favorite) DDL.** 
 
 
 Usage
